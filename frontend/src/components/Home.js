@@ -46,6 +46,7 @@ const Home = () => {
                     type="file"
                     name="image"
                     id="image"
+                    accept='image/*'
                     className='my-4 '
                     onChange={(e) => setImage(e.target.files[0])}
                 />
@@ -61,7 +62,7 @@ const Home = () => {
                                 <TableRow>
                                     <TableCell style={{ fontWeight: 'bold' }}>Number</TableCell>
                                     <TableCell style={{ fontWeight: 'bold' }}>Property</TableCell>
-                                    <TableCell style={{ fontWeight: 'bold' }}>Confindece</TableCell>
+                                    <TableCell style={{ fontWeight: 'bold' }}>Confidence</TableCell>
                                 </TableRow>
                             </TableHead>
                             <TableBody>
